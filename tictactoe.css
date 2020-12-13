@@ -1,0 +1,42 @@
+:root {
+    --grid-boyutu: 450px;
+    --margin-boyutu: 10px;
+    --square-boyutu: calc((var(--grid-boyutu) / 3) - var(--margin-boyutu));
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  #grid {
+    align-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: var(--grid-boyutu);
+    width: var(--grid-boyutu);
+    border:15px solid gray;
+  }
+  
+  #grid div {
+    background-color: white;
+    height: var(--square-boyutu);
+    width: var(--square-boyutu);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #grid div img {
+    width: 100%;
+  }
+  
+  article[data-sutun='2']{
+    width:400px;
+  }
+
+  article[data-sutun='3']{
+    width:600px;
+  }
